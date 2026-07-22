@@ -24,7 +24,7 @@
 
 ## 🚀 Project Overview
 
-This project demonstrates a **complete enterprise-grade SIEM (Security Information and Event Management) deployment** using **Wazuh**, a free and open-source security monitoring platform. The implementation covers the entire security monitoring lifecycle, from infrastructure setup to real-time threat detection and incident response.
+This project demonstrates a **complete enterprise-grade SIEM (Security Information and Event Management) deployment** using **Wazuh**, a free and open-source security monitoring platform. The implementation covers real-time threat detection, centralized log management, compliance monitoring, and incident response workflows.
 
 ### Key Objectives:
 ✅ Deployment of Wazuh SIEM server using a pre-built Virtual Appliance (OVA) on Oracle VirtualBox  
