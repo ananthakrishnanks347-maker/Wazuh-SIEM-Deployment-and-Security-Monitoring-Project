@@ -24,8 +24,9 @@
 
 ## 🚀 Project Overview
 
-This project demonstrates a **complete enterprise-grade SIEM (Security Information and Event Management) deployment** using **Wazuh**, a free and open-source security monitoring platform. The implementation showcases:
+This project demonstrates a **complete enterprise-grade SIEM (Security Information and Event Management) deployment** using **Wazuh**, a free and open-source security monitoring platform. The implementation covers the entire security monitoring lifecycle, from infrastructure setup to real-time threat detection and incident response.
 
+### Key Objectives:
 ✅ Deployment of Wazuh SIEM server using a pre-built Virtual Appliance (OVA) on Oracle VirtualBox  
 ✅ Configuration and enrollment of Ubuntu endpoint agents for real-time monitoring  
 ✅ Simulation of real-world security threats and attack scenarios  
@@ -158,7 +159,7 @@ This hands-on project is ideal for security professionals, SOC analysts, and sys
   - **Architecture:** x86_64
   - **Wazuh Server Address:** Enter the server IP or hostname
 * Copy the provided installation script
-* **Screenshot Reference:** `docs/6_2.png`
+* **Screenshot Reference:** `docs/6.png`
 
 #### Step 2.3 - Install Wazuh Agent on Ubuntu
 * SSH into your Ubuntu machine or open its terminal
@@ -178,7 +179,7 @@ This hands-on project is ideal for security professionals, SOC analysts, and sys
   # Restart agent:
   systemctl restart wazuh-agent
   ```
-* **Screenshot Reference:** `docs/7.jpg`
+* **Screenshot Reference:** `docs/7.png`
 
 #### Step 2.4 - Verify Agent Registration
 * Return to Wazuh Dashboard → **Agents**
@@ -188,7 +189,7 @@ This hands-on project is ideal for security professionals, SOC analysts, and sys
   - IP Address
   - OS Version
   - Last Connection Time
-* **Screenshot References:** `docs/8_2.png`, `docs/9_2.png`
+* **Screenshot References:** `docs/8.png`, `docs/9.png`
 
 ---
 
@@ -231,7 +232,7 @@ cat /etc/shadow 2>/dev/null
     - Rule 5504: Multiple login failures
     - Rule 5505: SSH brute force attempt
   - **Event Details:** Source IP, timestamp, user, failed attempts
-* **Screenshot Reference:** `docs/10.jpg`
+* **Screenshot Reference:** `docs/10.png`
 
 #### Step 3.3 - Analyze Security Events
 * Click on individual alerts for detailed analysis
@@ -332,11 +333,12 @@ cat /etc/shadow 2>/dev/null
 | **3** | Server Shell Login | ![Shell Login](docs/3.png) |
 | **4** | Server IP Configuration (`ip a`) | ![IP Config](docs/4.png) |
 | **5** | Wazuh Web Dashboard Login | ![Dashboard Login](docs/5.png) |
-| **6** | Agent Deployment Configuration | ![Deploy Agent](docs/6_2.png) |
-| **7** | Ubuntu Agent Terminal Setup | ![Agent Terminal](docs/7.jpg) |
-| **8** | Agent Dashboard Overview | ![Dashboard Overview](docs/8_2.png) |
-| **9** | Active Agents Summary | ![Active Agents](docs/9_2.png) |
-| **10** | Threat Hunting & Attack Alerts | ![Threat Hunting](docs/10.jpg) |
+| **6** | Agent Deployment Configuration | ![Deploy Agent](docs/6.png) |
+| **7** | Ubuntu Agent Terminal Setup | ![Agent Terminal](docs/7.png) |
+| **8** | Agent Dashboard Overview | ![Dashboard Overview](docs/8.png) |
+| **9** | Active Agents Summary | ![Active Agents](docs/9.png) |
+| **10** | Threat Hunting & Attack Alerts | ![Threat Hunting](docs/10.png) |
+| **11** | Mission Deployment | ![Mission Deployment](docs/11.png) |
 
 ---
 
